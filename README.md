@@ -8,5 +8,5 @@ Usage:
 docker build . -t dlv
 
 # Run container
-docker run -v $(pwd)/odbc.ini:/etc/odbc.ini -v $(pwd)/files:/input dlv [file1] [file2]...
+docker run --rm -v $(pwd)/odbc.ini:/etc/odbc.ini -v $(pwd)/files:/input dlv <optional flags> [file1] [file2]...
 ```
